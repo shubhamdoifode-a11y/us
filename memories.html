@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Memories 💞</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="riddhi.mpeg" type="audio/mpeg">
+    </audio>
+
+    <!-- Hearts Background -->
+    <div class="hearts-bg" id="heartsBg"></div>
+
+    <section class="memories-page">
+
+        <h1 class="memories-title">Our Beautiful Memories 💖</h1><br><br>
+
+        <!-- GRID -->
+        <div class="memories-grid">
+
+            <!-- CARD 1 -->
+            <div class="memory-card" onclick="openPopup('images/pic1.jpg', 'Our first memory together 💕')">
+                <div class="card-img">
+                    <img src="o.jpeg" alt="Memory 1">
+                </div>
+                <h3>First Moment</h3>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="memory-card" onclick="openPopup('images/pic2.jpg', 'A moment I will never forget ✨')">
+                <div class="card-img">
+                    <img src="d.jpeg" alt="Memory 2">
+                </div>
+                <h3>Hold My Hand</h3>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="memory-card" onclick="openPopup('images/pic3.jpg', 'Smiles that mean everything 😊')">
+                <div class="card-img">
+                    <img src="e.jpeg" alt="Memory 3">
+                </div>
+                <h3>Sorry</h3>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="memory-card" onclick="openPopup('images/pic4.jpg', 'Forever my favorite person ❤️')">
+                <div class="card-img">
+                    <img src="v.jpeg" alt="Memory 4">
+                </div>
+                <h3>Come Close To Me</h3>
+            </div>
+
+            <div class="memory-card" onclick="openPopup('images/pic3.jpg', 'Smiles that mean everything 😊')">
+                <div class="card-img">
+                    <img src="t.jpeg" alt="Memory 3">
+                </div>
+                <h3>Be With Me</h3>
+            </div>
+
+            <div class="memory-card" onclick="openPopup('images/pic3.jpg', 'Smiles that mean everything 😊')">
+                <div class="card-img">
+                    <img src="u.jpeg" alt="Memory 3">
+                </div>
+                <h3>Just A Pic</h3>
+            </div>
+
+            <div class="memory-card" onclick="openPopup('images/pic3.jpg', 'Smiles that mean everything 😊')">
+                <div class="card-img">
+                    <img src="h.jpeg" alt="Memory 3">
+                </div>
+                <h3>Enjoying The Moment</h3>
+            </div>
+
+            <div class="memory-card" onclick="openPopup('images/pic3.jpg', 'Smiles that mean everything 😊')">
+                <div class="card-img">
+                    <img src="n.jpeg" alt="Memory 3">
+                </div>
+                <h3>Old Memories</h3>
+            </div>
+        </div>
+        </div> <!-- end of memories-grid -->
+
+<div class="exit-container">
+    <button class="exit-btn" onclick="exitSite()">Exit ✖</button>
+</div>
+
+</section>
+
+    </section>
+
+    <!-- POPUP -->
+    <div class="popup" id="popup">
+        <span class="close" onclick="closePopup()">×</span>
+        <img id="popupImg">
+        <p id="popupText"></p>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
